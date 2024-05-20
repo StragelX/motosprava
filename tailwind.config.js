@@ -13,6 +13,11 @@ export default {
       fontFamily: {
         "Roboto Condensed": ["Roboto Condensed", "sans-serif"],
       },
+      colors: {
+        primary: "#4D7DF9",
+        bg: "#FFEE02",
+        bg_gray: "#F8F8F8",
+      },
     },
   },
   plugins: [],

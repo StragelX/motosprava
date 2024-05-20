@@ -4,7 +4,7 @@ import Facebook from 'vue-material-design-icons/Facebook.vue';
 </script>
 
 <template>
-    <section class="bg-[#323232] pt-10 pb-16">
+    <section class="bg-[#323232] px-4 pt-10 pb-16">
         <div class="container mx-auto">
             <div class="flex items-start justify-between">
                 <div class="flex-1">
@@ -12,7 +12,7 @@ import Facebook from 'vue-material-design-icons/Facebook.vue';
                         <img src="@/assets/img/logo_footer.webp" alt="logo" />
                     </router-link>
 
-                    <p class=" text-white text-lg font-light max-w-[730px] mb-10">Ви отримаєте від нас найкращий контент, який допоможе вашому бізнесу зростати. Найсвіжіші новини, бонуси - лише для підписників!</p>
+                    <p class=" text-white text-base xl:text-lg font-light max-w-[730px] mb-10">Ви отримаєте від нас найкращий контент, який допоможе вашому бізнесу зростати. Найсвіжіші новини, бонуси - лише для підписників!</p>
 
                     <p class="text-stone-300 text-sm font-light">Copyright © 2024 Мотосправа. Всі права захищенні</p>
                 </div>

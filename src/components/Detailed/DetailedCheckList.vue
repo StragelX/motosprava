@@ -39,11 +39,11 @@ const togglePart = (index) => {
 </script>
 
 <template>
-    <section class="bg-[#F8F8F8] pb-20">
+    <section class="bg-bg_gray pb-20">
         <div class="container mx-auto">
-            <SectionHeader backText="деталі" title=" Опціональний список необхідних деталей для операції" text="" />
+            <SectionHeader backText="деталі" title="Опціональний список необхідних деталей для операції" text="" />
 
-            <div class="text-zinc-800 text-2xl font-light mb-10">
+            <div class="text-zinc-800 text-base xl:text-2xl font-light mb-10 px-4">
                 Діагностика автомобіля – це важливий етап його обслуговування. Вона
                 дозволяє виявити потенційні проблеми на ранніх стадіях і запобігти
                 їхньому розвитку. Це може заощадити вам час і гроші на ремонті
@@ -53,7 +53,7 @@ const togglePart = (index) => {
                 ті, які не видно неозброєним оком.
             </div>
 
-            <div class="bg-white rounded-2xl border border-stone-300 p-10 text-zinc-800 text-base lg:text-lg font-light font-['Roboto'] space-y-2">
+            <div class="bg-white rounded-2xl border border-stone-300 p-10 text-zinc-800 text-base xl:text-lg font-light space-y-2 mx-4">
                 <template v-if="parts.length">
                     <DetailedCheckbox v-for="(part, index) in parts" :key="index" :title="part.title" :checked="part.checked" @click="togglePart(index)" />
                 </template>

@@ -8,9 +8,9 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="flex items-center gap-2 mb-7">
+    <div class="flex items-center gap-2 mb-7 justify-center sm:justify-start">
         <template v-for="index in Math.min(5, parseInt(rating))" key="index">
-            <Star class="text-[#FFEE02]" />
+            <Star class="text-bg" />
         </template>
         <template v-for="index in Math.max(0, 5 - parseInt(rating))" key="index">
             <StarOutline class="text-[#CBCBCB]" />

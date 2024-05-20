@@ -33,11 +33,11 @@ const services = [
 </script>
 
 <template>
-    <section class="bg-[#F8F8F8] lg:pb-32">
+    <section class="bg-bg_gray pb-16 xl:pb-32">
         <div class="container mx-auto">
             <SectionHeader backText="послуги" title="Саме час обрати послугу" text="Для початку оберіть запит - це допоможе надати актуальну інформацію про послуги та їх ціни" />
 
-            <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 lg:gap-y-24">
+            <div class="md:mt-12 grid md:grid-cols-2 xl:grid-cols-3 gap-10 md:gap-14 xl:gap-y-24">
                 <template v-for="(service, index) in services" :key="index">
                     <HomeOneService :name="service.name" :linkTo="service.useLink" :imgSrc="service.image" />
                 </template>

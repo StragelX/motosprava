@@ -40,18 +40,18 @@ const services = [
     <Carousel :per-page-custom="[[0, 1]]" paginationActiveColor="#4D7DF9" :paginationSize="20" paginationPosition="bottom-overlay" :loop="true" :autoplay="true">
         <Slide v-for="(service, index) in services" :key="index" :data-index="index - 1">
             <div class="bg-white flex items-stretch h-full">
-                <div class="w-2/5 p-12">
+                <div class="md:w-2/5 p-4 pb-12 sm:p-12 text-center sm:text-left">
                     <HomePopularSliderRating :rating="service.rating" />
 
-                    <p class="text-zinc-800 text-4xl font-bold font-['Roboto Condensed'] mb-3">
+                    <p class="text-zinc-800 text-2xl xl:text-4xl font-bold font-['Roboto Condensed'] mb-3">
                         {{ service.name }}
                     </p>
 
-                    <p class="text-zinc-800 text-2xl font-light mb-6">
+                    <p class="text-zinc-800 text-base xl:text-2xl font-light mb-6">
                         {{ service.text }}
                     </p>
 
-                    <Btn customClass="!w-[230px] !ml-0" isLink :linkTo="service.linkTo">Переглянути послугу</Btn>
+                    <Btn customClass="!w-[230px] mx-auto sm:!ml-0" isLink :linkTo="service.linkTo">Переглянути послугу</Btn>
                 </div>
 
                 <div class="flex-1 overflow-hidden">
@@ -61,8 +61,3 @@ const services = [
         </Slide>
     </Carousel>
 </template>
-
-
-<style>
-.VueCarousel-pagination {}
-</style>

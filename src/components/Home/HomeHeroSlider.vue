@@ -35,15 +35,15 @@ const services = [
     <section class="bg-black">
         <Carousel :per-page-custom="[[0, 1]]" paginationActiveColor="#4D7DF9" :paginationSize="20" paginationPosition="bottom-overlay" :loop="true" :autoplay="true">
             <Slide v-for="(service, index) in services" :key="index" :data-index="index - 1">
-                <div class="relative h-screen">
+                <div class="relative h-screen px-4">
                     <img :src="service.image" :alt="service.name" class="absolute pointer-events-none top-0 left-0 w-full h-full object-cover object-center z-0">
 
                     <div class="container mx-auto relative z-10 flex flex-col justify-center h-full">
-                        <h1 class="text-white text-6xl font-bold font-['Roboto Condensed'] uppercase mb-1 text_shadow">
+                        <h1 class="text-white md:text-3xl lg:text-6xl font-bold font-['Roboto Condensed'] uppercase mb-1 text_shadow">
                             {{ service.name }}
                         </h1>
 
-                        <p class="text-white text-2xl font-light mb-6 text_shadow">
+                        <p class="text-white text-base xl:text-2xl font-light mb-6 text_shadow">
                             {{ service.text }}
                         </p>
 

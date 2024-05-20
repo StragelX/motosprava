@@ -24,7 +24,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  linkActiveClass: "!border-[#4D7DF9]",
+  linkActiveClass: "!border-primary",
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 };
   },

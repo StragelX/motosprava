@@ -7,7 +7,7 @@ const props = defineProps({
     active: Boolean,
 })
 
-const cls = 'flex mx-auto items-center justify-center h-14 rounded shadow border text-sm font-normal font-["Roboto Condensed"] uppercase transition-all w-full' + ' ' + (props.active ? 'bg-[#4D7DF9] border-[#4D7DF9] text-white hover:lg:border-white hover:lg:bg-white hover:lg:text-zinc-800' : 'bg-white text-zinc-800 hover:lg:bg-[#4D7DF9] hover:lg:border-[#4D7DF9] hover:lg:text-white') + ' ' + (props.customClass ? props.customClass : '');
+const cls = 'flex mx-auto items-center justify-center h-14 rounded shadow border text-sm font-normal font-["Roboto Condensed"] uppercase transition-all w-full' + ' ' + (props.active ? 'bg-primary border-primary text-white hover:xl:border-white hover:xl:bg-white hover:xl:text-zinc-800' : 'bg-white text-zinc-800 hover:xl:bg-primary hover:xl:border-primary hover:xl:text-white') + ' ' + (props.customClass ? props.customClass : '');
 </script>
 
 <template>
