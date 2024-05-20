@@ -53,7 +53,7 @@ const togglePart = (index) => {
                 ті, які не видно неозброєним оком.
             </div>
 
-            <div class="bg-white rounded-2xl border border-stone-300 p-10 text-zinc-800 text-base xl:text-lg font-light space-y-2 mx-4">
+            <div class="bg-white rounded-2xl border border-stone-300 p-4 md:p-10 text-zinc-800 text-base xl:text-lg font-light space-y-2 mx-4">
                 <template v-if="parts.length">
                     <DetailedCheckbox v-for="(part, index) in parts" :key="index" :title="part.title" :checked="part.checked" @click="togglePart(index)" />
                 </template>
